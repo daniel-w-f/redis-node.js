@@ -77,6 +77,29 @@ OK
 (integer) 173
 ```
 
+Start testing hashes
+
+```redis-cli
+127.0.0.1:6379> hmset user:123 username coolguy firstName Cool city "New York"    
+OK
+127.0.0.1:6379> hgetall user:123
+1) "username"
+2) "coolguy"
+3) "firstName"
+4) "Cool"
+5) "city"
+6) "New York"
+127.0.0.1:6379> hget user:123 city
+"New York"
+127.0.0.1:6379> hmget user:123 username firstName
+1) "coolguy"
+2) "Cool"
+127.0.0.1:6379> hexists user:123 zip
+(integer) 0
+127.0.0.1:6379> hexists user:123 firstName
+(integer) 1
+```
+
 ## Redis configuration
 
 <https://redis.io/docs/stack/get-started/install/docker/>
