@@ -62,6 +62,8 @@ Simple list of commands, might be enhanced with more details later.
 2) "/data"
 ```
 
+If password protection is activated `redis-cli -a <password>`
+
 ## Redis configuration
 
 <https://redis.io/docs/stack/get-started/install/docker/>
