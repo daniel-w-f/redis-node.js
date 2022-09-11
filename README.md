@@ -169,3 +169,10 @@ PS F:\Development\source\github\redis-node.js> docker exec -it redis-server-83-s
 127.0.0.1:6383> get masterslave
 "blub"
 ```
+
+## Redis - Documentation
+
+- https://redis.io/commands/
+- https://redis.io/docs/manual/cli/
+- https://hub.docker.com/_/redis
+- https://redis.io/docs/stack/get-started/install/docker/
