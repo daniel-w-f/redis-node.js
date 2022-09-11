@@ -1,9 +1,11 @@
 import Redis from "ioredis";
 
 // [ioredis] Unhandled error event: Error: connect ECONNREFUSED 127.0.0.1:6379
-const redis = new Redis({password: 'dontputthispasswordongithub'});
+const redis = new Redis({
+    // password: 'dontputthispasswordongithub'
+});
 
-redis.set('name', 'Daniel');
+// redis.set('name', 'Daniel');
 redis.get('name', (err, result) => {
     console.log(result);
 });
