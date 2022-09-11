@@ -74,6 +74,12 @@ Simple list of commands, might be enhanced with more details later.
 
 https://hub.docker.com/_/redis
 
+### issues
+
+Somehow requirepass in redis.conf from the master is not working?!
+Setting it via `config set requirepass <pass>` it is working.
+No problems with the `masterauth` setting from the slave. As soon as the master password is set via CLI, the slave can connect successfully.
+
 ## Redis master - slave
 
 https://github.com/codenote-net/docker-redis-master-slave/blob/master/docker-compose.yml
@@ -95,6 +101,10 @@ docker run -d -p 6383:6383 --name redis-server-83-slave -v F:\Development\source
 Log showing the connection
 
 ```log
+master
+1:M 11 Sep 18:14:01.056 * Slave 172.17.0.1:6383 asks for synchronization
+1:M 11 Sep 18:14:01.056 * Partial resynchronization not accepted: Replication ID mismatch (Slave asked for '6c63742103f723e46e72c0babafd7eb8d3aecc54', my replication IDs are 'de808f110b9b4e9f11bf21778712b09d8c169e60' and '0000000000000000000000000000000000000000')
+slave
 1:S 11 Sep 18:13:59.048 * Connecting to MASTER 192.168.16.1:6379
 1:S 11 Sep 18:13:59.048 * MASTER <-> SLAVE sync started
 1:S 11 Sep 18:14:01.050 * Non blocking connect for SYNC fired the event.
