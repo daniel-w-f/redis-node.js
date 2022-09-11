@@ -50,3 +50,13 @@ Simple list of commands, might be enhanced with more details later.
 1) "dir"
 2) "/data"
 ```
+
+## Redis configuration
+
+<https://redis.io/docs/stack/get-started/install/docker/>
+
+> **Persistence**
+>
+> To persist your Redis data to a local path, specify -v to configure a local volume. This command stores all data in the local directory local-data:
+>
+> `$ docker run -v /local-data/:/data redis/redis-stack:latest`
