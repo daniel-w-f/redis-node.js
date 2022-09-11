@@ -21,7 +21,7 @@ The application expects that a Redis server is running locally on **port 6379**.
 First start:
 
 ```docker
-docker run -p 6379:6379 --name redis-server-4.0.2 redis:4.0.2
+docker run -d -p 6379:6379 --name redis-server-4.0.2 redis:4.0.2
 ```
 
 Starting afterwards:
