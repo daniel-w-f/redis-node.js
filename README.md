@@ -64,6 +64,19 @@ Simple list of commands, might be enhanced with more details later.
 
 If password protection is activated `redis-cli -a <password>`
 
+```redis-cli
+127.0.0.1:6379> set counter 123
+OK
+127.0.0.1:6379> incr counter
+(integer) 124
+127.0.0.1:6379> incrby counter 100
+(integer) 224
+127.0.0.1:6379> decr counter
+(integer) 223
+127.0.0.1:6379> decrby counter 50
+(integer) 173
+```
+
 ## Redis configuration
 
 <https://redis.io/docs/stack/get-started/install/docker/>
