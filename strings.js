@@ -3,13 +3,13 @@ const Strings = (redis) => {
     redis.get('name', (err, result) => {
         console.log(result);
     });
-    
+
     redis.get('address', (err, result) => {
         console.log(result);
     });
-    
+
     redis.incrby('counter', 300);
-    
+
     redis.get('counter', (err, result) => {
         console.log(result);
     });
