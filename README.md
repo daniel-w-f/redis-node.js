@@ -1,4 +1,5 @@
 # redis-node.js
+
 Example application created along LinkedIn Learning: Learning Redis
 
 ## Init repo
@@ -36,12 +37,6 @@ Starting afterwards:
 docker start redis-server-4.0.2
 ```
 
-Connect to Redis-CLI on the Docker Redis-Server:
-
-```docker
-docker exec -it redis-server-4.0.2 redis-cli
-```
-
 ### Start with different port
 
 Start Docker container with port 82
@@ -51,6 +46,12 @@ Connect to redis-cli on a non default port
 `docker exec -it redis-server-82 redis-cli -p 6382`
 
 ## Redis CLI
+
+Connect to Redis-CLI on the Docker Redis-Server:
+
+```docker
+docker exec -it redis-server-4.0.2 redis-cli
+```
 
 Simple list of commands, might be enhanced with more details later.
 
@@ -176,3 +177,6 @@ PS F:\Development\source\github\redis-node.js> docker exec -it redis-server-83-s
 - https://redis.io/docs/manual/cli/
 - https://hub.docker.com/_/redis
 - https://redis.io/docs/stack/get-started/install/docker/
+- https://redis.io/docs/manual/pubsub/
+- ! redis/topcis/sentinel - failover
+- ! redis cluster
