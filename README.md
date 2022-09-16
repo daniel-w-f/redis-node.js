@@ -180,3 +180,4 @@ PS F:\Development\source\github\redis-node.js> docker exec -it redis-server-83-s
 - https://redis.io/docs/manual/pubsub/
 - ! redis/topcis/sentinel - failover
 - ! redis cluster
+- https://redis.io/docs/clients/ - lot of different clients for various programming languages
